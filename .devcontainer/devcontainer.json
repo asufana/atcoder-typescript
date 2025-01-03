@@ -1,0 +1,14 @@
+{
+    "name": "TypeScript AtCorder",
+    "dockerComposeFile": "compose.yml",
+    "service": "app",
+    "workspaceFolder": "/opt",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+            ]
+        },
+        "settings": {
+        }
+    }
+}

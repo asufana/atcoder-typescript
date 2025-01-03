@@ -1,0 +1,14 @@
+services:
+  app:
+    user: "${USER_ID:-1000}:${GROUP_ID:-1000}"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USER_ID: ${USER_ID:-1000}
+        GROUP_ID: ${GROUP_ID:-1000}
+        USER_NAME: ${USER_NAME:-vscode}
+    volumes:
+      - ..:/opt
+      - ~/.gitconfig:/ho
+    tty: true
